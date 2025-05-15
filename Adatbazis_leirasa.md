@@ -6,7 +6,7 @@ nev: A gyártó neve (nem lehet null)
 
 orszag: A gyártó országa
 
-  
+
 Auto: Autókat tárolja
 
 ID: Az autó egyedi azonosítója (elsődleges kulcs)
