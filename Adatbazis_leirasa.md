@@ -1,14 +1,21 @@
 Gyarto: Autógyártókat tárolja.
 
   ID: A gyártó egyedi azonosítója (elsődleges kulcs).
+  
   nev: A gyártó neve (nem lehet null).
+  
   orszag: A gyártó országa.
   
 Auto: Autókat tárolja.
+
   ID: Az autó egyedi azonosítója (elsődleges kulcs).
+  
   nev: Az autó neve (nem lehet null).
+  
   gyartasi_ev: Az autó gyártási éve.
+  
   ar: Az autó ára.
+  
   gyarto_ID: A gyártó azonosítója, hivatkozik a Gyarto tábla ID oszlopára (idegen kulcs).
 
 Tulajdonos: Autótulajdonosokat tárolja.
