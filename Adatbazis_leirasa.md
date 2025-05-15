@@ -1,28 +1,29 @@
-Gyarto: Az autó gyártóit tárolja.
-  ID: A gyártó egyedi azonosítója (egész szám, elsődleges kulcs).
-  nev: A gyártó neve (szöveg, nem lehet üres).
-  orszag: A gyártó országa (szöveg).
+Gyarto: Autógyártókat tárolja.
+  ID: A gyártó egyedi azonosítója (elsődleges kulcs).
+  nev: A gyártó neve (nem lehet null).
+  orszag: A gyártó országa.
   
-Auto: Az autókat tárolja.
-  ID: Az autó egyedi azonosítója (egész szám, elsődleges kulcs).
-  nev: Az autó neve (szöveg, nem lehet üres).
-  gyartasi_ev: A gyártási év (egész szám).
-  ar: Az autó ára (valós szám).
-  gyarto_ID: A gyártó azonosítója, ami a Gyarto tábla ID oszlopára hivatkozik (egész szám, idegen kulcs).
+Auto: Autókat tárolja.
+  ID: Az autó egyedi azonosítója (elsődleges kulcs).
+  nev: Az autó neve (nem lehet null).
+  gyartasi_ev: Az autó gyártási éve.
+  ar: Az autó ára.
+  gyarto_ID: A gyártó azonosítója, hivatkozik a Gyarto tábla ID oszlopára (idegen kulcs).
 
-Tulajdonos: Az autó tulajdonosait tárolja.
-ID: A tulajdonos egyedi azonosítója (egész szám, elsődleges kulcs).
-nev: A tulajdonos neve (szöveg, nem lehet üres).
-orszag: A tulajdonos országa (szöveg).
-Tulajdonlas: Azt tárolja, hogy melyik autó kihez tartozik.
-ID: A tulajdonlás egyedi azonosítója (egész szám, elsődleges kulcs).
-auto_ID: Az autó azonosítója, ami az Auto tábla ID oszlopára hivatkozik (egész szám, idegen kulcs).
-tulajdonos_ID: A tulajdonos azonosítója, ami a Tulajdonos tábla ID oszlopára hivatkozik (egész szám, idegen kulcs).
-vasarlas_datuma: A vásárlás dátuma.
+Tulajdonos: Autótulajdonosokat tárolja.
+  ID: A tulajdonos egyedi azonosítója (elsődleges kulcs).
+  nev: A tulajdonos neve (nem lehet null).
+  orszag: A tulajdonos országa.
 
-Specifikacio: Az autók műszaki adatait tárolja.
-ID: A specifikáció egyedi azonosítója (egész szám, elsődleges kulcs).
-auto_ID: Az autó azonosítója, ami az Auto tábla ID oszlopára hivatkozik (egész szám, idegen kulcs).
-vegsebesseg_kmh: A végsebesség km/h-ban (egész szám).
-gyorsulas_0_100: A gyorsulás 0-ról 100 km/h-ra (valós szám).
-motor_tipus: A motor típusa (szöveg).
+Tulajdonlas: Azt tárolja, hogy melyik autónak ki a tulajdonosa és mikor vásárolta.
+  ID: A tulajdonlás egyedi azonosítója (elsődleges kulcs).
+  auto_ID: Az autó azonosítója, hivatkozik az Auto tábla ID oszlopára (idegen kulcs).
+  tulajdonos_ID: A tulajdonos azonosítója, hivatkozik a Tulajdonos tábla ID oszlopára (idegen kulcs).
+  vasarlas_datuma: A vásárlás dátuma.
+
+Specifikacio: Az autók specifikációit tárolja.
+  ID: A specifikáció egyedi azonosítója (elsődleges kulcs).
+  auto_ID: Az autó azonosítója, hivatkozik az Auto tábla ID oszlopára (idegen kulcs).
+  vegsebesseg_kmh: Az autó végsebessége km/h-ban.
+  gyorsulas_0_100: Az autó gyorsulása 0-ról 100 km/h-ra másodpercben.
+  motor_tipus: Az autó motorjának típusa.
