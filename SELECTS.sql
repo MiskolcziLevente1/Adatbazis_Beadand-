@@ -27,5 +27,4 @@ FROM Tulajdonlas
 JOIN Auto ON Tulajdonlas.auto_ID = Auto.ID
 JOIN Tulajdonos ON Tulajdonlas.tulajdonos_ID = Tulajdonos.ID
 WHERE Tulajdonos.nev = 'Elon Musk';
-Írás nekik: Benjámin Vargha
 
