@@ -1,4 +1,5 @@
 Gyarto: Autógyártókat tárolja.
+
   ID: A gyártó egyedi azonosítója (elsődleges kulcs).
   nev: A gyártó neve (nem lehet null).
   orszag: A gyártó országa.
